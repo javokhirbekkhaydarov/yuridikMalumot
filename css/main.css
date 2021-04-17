@@ -1,0 +1,297 @@
+.navbar #headerNavbar {
+  position: fixed;
+  top: 5rem;
+  z-index: 3;
+  transform: translateX(89px);
+  background-color: #1b1e4e; }
+  .navbar #headerNavbar .nav-item {
+    display: flex;
+    justify-content: space-around; }
+    .navbar #headerNavbar .nav-item .nav-link {
+      padding-right: 4rem;
+      padding-left: 4rem; }
+      .navbar #headerNavbar .nav-item .nav-link:hover {
+        color: #e98737; }
+  .navbar #headerNavbar .navbar-toggler {
+    outline: none; }
+
+.carousel {
+  transform: translateY(-6rem); }
+  .carousel .carousel-inner .carousel-item img {
+    filter: brightness(40%);
+    width: 1400px; }
+  .carousel .carousel-inner .carousel-item .container-fluid .carousel-caption {
+    margin-bottom: 10rem; }
+    .carousel .carousel-inner .carousel-item .container-fluid .carousel-caption .display-4 {
+      margin-left: 0;
+      margin-right: 0; }
+    .carousel .carousel-inner .carousel-item .container-fluid .carousel-caption .btn {
+      background-color: #1b1e4e; }
+    .carousel .carousel-inner .carousel-item .container-fluid .carousel-caption #whiteBtn {
+      color: black;
+      background-color: #fff; }
+
+.container .btn {
+  background-color: #1b1e4e;
+  color: #fff; }
+
+section {
+  background-color: #1b1e4e;
+  height: 400px; }
+  section .container .carousel .carousel-inner .carousel-item .card-deck .card {
+    border-radius: 0px; }
+  section .container .carousel .carousel-inner .carousel-item .card-deck .card-img-overlay {
+    opacity: 100;
+    transition: all 0.2s ease-in-out; }
+    section .container .carousel .carousel-inner .carousel-item .card-deck .card-img-overlay p {
+      font-family: serif;
+      font-weight: 500; }
+    section .container .carousel .carousel-inner .carousel-item .card-deck .card-img-overlay:hover {
+      opacity: 0; }
+
+.container .card-deck .card {
+  cursor: pointer; }
+  .container .card-deck .card .card-img-overlay h5 {
+    transform: translate(-1.2rem, 8.5rem);
+    background-color: #1b1e4e;
+    color: #fff;
+    opacity: 90%;
+    width: 350px;
+    font-size: 16px;
+    padding-bottom: 13px;
+    height: 45px; }
+
+header {
+  background-color: #1b1e4e;
+  color: #fff; }
+  header img {
+    filter: brightness(10%);
+    background-size: cover;
+    width: 1400px; }
+  header .container {
+    transform: translateY(-30rem); }
+
+footer {
+  color: #fff;
+  background-color: #1b1e4e; }
+  footer hr {
+    color: #ca9b1b;
+    height: 0.5px;
+    background-color: #ca9b1b;
+    margin-top: -0.5rem; }
+  footer .row .col-4 p {
+    cursor: pointer; }
+    footer .row .col-4 p:hover {
+      color: #ca9b1b; }
+
+@media (min-width: 0px) and (max-width: 474.9px) {
+  .container .navbar {
+    transform: translateX(-1rem);
+    margin: 1rem auto; }
+    .container .navbar .navbar-collapse .nav-item {
+      margin: 0; }
+
+  .navbar {
+    margin: 0; }
+    .navbar #headerNavbar {
+      margin-right: 7rem;
+      transform: translate(0rem, -1rem);
+      width: 90%;
+      margin: 0auto; }
+      .navbar #headerNavbar .nav .nav-item .nav-link span {
+        display: none; }
+
+  .container .text-center .display-4 {
+    font-size: 33px; }
+  .container .row {
+    display: flex;
+    flex-direction: column; }
+    .container .row .col-6 {
+      font-size: 16px;
+      width: 100%; }
+      .container .row .col-6 img {
+        transform: scale(1.9);
+        margin-top: 3rem;
+        margin-bottom: 3rem; }
+
+  section {
+    margin: 0;
+    height: 230px; }
+    section .text-center .display-4 {
+      font-size: 33px; }
+    section .carousel {
+      display: flex; }
+      section .carousel .carousel-inner .carousel-item .card-deck {
+        display: flex; }
+        section .carousel .carousel-inner .carousel-item .card-deck .card .card-img-overlay p {
+          font-size: 18px;
+          transform: translateY(-1rem); }
+        section .carousel .carousel-inner .carousel-item .card-deck .card .card-img-overlay h4 {
+          font-size: 6px;
+          transform: translateY(-2rem); }
+
+  .container #cardSarlavhasi h2 {
+    font-size: 33px;
+    color: #1b1e4e; }
+  .container .card-deck {
+    margin-bottom: 1rem; }
+    .container .card-deck .card .card-img-overlay {
+      width: 100%; }
+      .container .card-deck .card .card-img-overlay h5 {
+        font-size: 14px;
+        width: 306px; }
+
+  header .container {
+    transform: translateY(0rem); }
+    header .container h3 {
+      font-size: 12px; }
+    header .container p {
+      font-size: 10px; }
+    header .container .btn {
+      font-size: 8px; }
+
+  .container .row {
+    display: flex;
+    justify-content: space-around; }
+    .container .row .col-4 {
+      width: 100%;
+      margin-bottom: 1rem; }
+      .container .row .col-4 p {
+        width: 250px;
+        font-size: 14px; } }
+@media (min-width: 475px) and (max-width: 774.9px) {
+  .container .navbar {
+    transform: translateX(-1rem);
+    margin: 1rem auto; }
+    .container .navbar .navbar-collapse .nav-item {
+      margin: 0; }
+
+  .container .text-center .display-4 {
+    font-size: 33px; }
+  .container .row {
+    display: flex;
+    flex-direction: column; }
+    .container .row .col-6 {
+      font-size: 16px;
+      width: 100%; }
+      .container .row .col-6 img {
+        transform: scale(1.9);
+        margin-top: 3rem;
+        margin-bottom: 3rem; }
+
+  section {
+    margin: 0;
+    height: 230px; }
+    section .text-center .display-4 {
+      font-size: 33px; }
+    section .carousel {
+      display: flex; }
+      section .carousel .carousel-inner .carousel-item .card-deck {
+        display: flex; }
+        section .carousel .carousel-inner .carousel-item .card-deck .card .card-img-overlay p {
+          font-size: 26px;
+          transform: translateY(-1rem); }
+        section .carousel .carousel-inner .carousel-item .card-deck .card .card-img-overlay h4 {
+          font-size: 16px;
+          transform: translateY(-2rem); }
+
+  .container #cardSarlavhasi h2 {
+    font-size: 33px;
+    color: #1b1e4e; }
+  .container .card-deck {
+    margin-bottom: 1rem;
+    display: flex; }
+    .container .card-deck .card {
+      width: 50%; }
+      .container .card-deck .card .card-img-overlay h5 {
+        font-size: 14px;
+        width: 100%; }
+
+  header .container {
+    transform: translateY(0rem); }
+    header .container h3 {
+      font-size: 16px; }
+    header .container p {
+      font-size: 14px; }
+    header .container .btn {
+      font-size: 13px; }
+
+  .container .row {
+    display: flex;
+    justify-content: space-between; }
+    .container .row .col-4 {
+      width: 100%;
+      margin-bottom: 1rem; }
+      .container .row .col-4 p {
+        width: 100%;
+        font-size: 14px; } }
+@media (min-width: 775px) and (max-width: 979.9px) {
+  .container .navbar {
+    transform: translateX(-1rem);
+    margin: 3rem auto; }
+    .container .navbar .navbar-collapse .nav-item {
+      margin: 0; }
+
+  .container .text-center .display-4 {
+    font-size: 33px; }
+  .container .row {
+    display: flex;
+    flex-direction: column; }
+    .container .row .col-6 {
+      font-size: 16px;
+      width: 100%; }
+      .container .row .col-6 img {
+        transform: scale(1.9);
+        margin-top: 3rem;
+        margin-bottom: 3rem; }
+
+  section {
+    margin: 0;
+    height: 230px; }
+    section .text-center .display-4 {
+      font-size: 33px; }
+    section .carousel {
+      display: flex; }
+      section .carousel .carousel-inner .carousel-item .card-deck {
+        display: flex; }
+        section .carousel .carousel-inner .carousel-item .card-deck .card .card-img-overlay p {
+          font-size: 26px;
+          transform: translateY(-1rem); }
+        section .carousel .carousel-inner .carousel-item .card-deck .card .card-img-overlay h4 {
+          font-size: 16px;
+          transform: translateY(-2rem); }
+
+  .container #cardSarlavhasi h2 {
+    font-size: 33px;
+    color: #1b1e4e; }
+  .container .card-deck {
+    margin-bottom: 1rem;
+    display: flex; }
+    .container .card-deck .card {
+      width: 50%; }
+      .container .card-deck .card .card-img-overlay h5 {
+        font-size: 14px;
+        width: 100%; }
+
+  header .container {
+    transform: translateY(0rem); }
+    header .container h3 {
+      font-size: 16px; }
+    header .container p {
+      font-size: 14px; }
+    header .container .btn {
+      font-size: 13px; }
+
+  .container .row {
+    display: flex;
+    justify-content: space-between; }
+    .container .row .col-4 {
+      width: 100%;
+      margin-bottom: 1rem; }
+      .container .row .col-4 p {
+        width: 100%;
+        font-size: 14px; 
+      scroll-behavior: smooth;}
+       }
+
+/*# sourceMappingURL=main.css.map */

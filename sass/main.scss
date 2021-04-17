@@ -1,0 +1,640 @@
+// ***** SASS  echnolgy ******
+
+$button:rgb(27, 30, 78);
+
+// *****  navbar style **************
+// margin-top: -12px;
+.navbar{
+    // z-index: 3;
+    #headerNavbar{
+     
+        position: fixed;
+        // margin-top: 3rem;
+    top:5rem;
+    z-index: 3;
+    // width: 960px;
+    transform: translateX(89px);
+
+    background-color:$button;
+    .nav-item{
+        display: flex;
+        justify-content: space-around;
+        .nav-link{
+            padding-right: 4rem;
+            padding-left: 4rem;
+           &:hover{
+               color: rgb(233, 135, 55);
+           }
+        }
+    }
+
+    .navbar-toggler{
+        outline: none;
+    }
+   }
+}
+.carousel{
+    transform: translateY(-6rem);
+    // background-size: 130%;
+    
+    .carousel-inner{
+        .carousel-item{
+            img{
+                // opacity: 70%;
+                filter: brightness(40%);
+                width: 1400px;
+            }
+          .container-fluid{
+            .carousel-caption{
+                margin-bottom: 10rem;
+                .display-4{
+                    // font-weight: 400;
+                
+                margin-left: 0;
+                margin-right: 0;
+            }
+                .btn{
+                    background-color: $button;
+                }
+                #whiteBtn{
+                   color:rgb(0, 0, 0);
+                   background-color: #fff;
+                }
+            }
+          }
+        }
+    }
+}
+
+// ***** button styles *****
+.container{
+    .btn{
+        background-color: $button;
+        color:#fff;
+    }
+}
+//  raqamlarni slayd qismining stili
+section{
+    background-color: $button;
+    height: 400px;
+    .container{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .card-deck{
+                        .card{
+                            border-radius: 0px;
+                        }
+                        .card-img-overlay{
+                            opacity: 100;
+                            transition: all 0.2s ease-in-out;
+                              p{
+                                font-family: serif;
+                                font-weight: 500;
+                            }
+                            &:hover{
+                                opacity: 0;
+
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// proyectni cardlar qismi
+.container {
+    .card-deck{
+        .card{
+            cursor: pointer;
+            .card-img-overlay{
+                h5{
+                    transform: translate(-1.2rem, 8.5rem);
+                    background-color: $button;
+                    color:#fff;
+                    opacity: 90%;
+                    width: 350px;
+                    font-size: 16px;
+                    padding-bottom: 13px;
+                    height: 45px;
+                    }
+            }
+        }
+    }
+}
+
+
+
+//proyectni huquqiy konsultatsiya qismi
+header{
+    background-color: $button;
+    color: #fff;
+    img{
+     filter: brightness(10%);
+     background-size: cover;
+     width: 1400px;
+    }
+    .container{
+        transform: translateY(-30rem);
+    }
+}
+//proyectni huquqiy konsultatsiya qismi tugadi
+
+ 
+
+footer{
+    color: #fff;
+    background-color: $button;
+    hr{
+         color: rgb(202, 155, 27);
+         height: 0.5px;
+         background-color: rgb(202, 155, 27);
+         margin-top: -0.5rem;
+     }
+     .row{
+         .col-4{
+             p{
+                 cursor: pointer;
+                 &:hover{
+                     color:rgb(202, 155, 27)
+                 }
+             }
+
+         }
+     }
+ }
+
+
+
+
+ //*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+ //
+ //       proyektimizning responsive qismi ya`ni media querylar bilan ishlash           _*_*_*_*_*_*_*_*_*
+ //      
+//*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+
+
+
+ @media(min-width:0px) and (max-width:474.9px) {
+
+    // navbar bottom1 responsive
+   
+    .container{
+        .navbar{
+            transform: translateX(-1rem);
+            margin: 1rem auto;
+           .navbar-collapse{
+             .nav-item{
+              margin: 0;
+             }
+           }
+        }
+    }
+    .navbar{
+        margin: 0;
+        #headerNavbar{
+            margin-right: 7rem;
+            transform: translate(0rem, -1rem);
+            width:90%;
+            margin: 0auto;
+            .nav{
+            
+                .nav-item{
+                    .nav-link{
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+
+    // kompaniya haqida ma`lumotlar yani  row va collar bilan ishlashning responsiveligi
+
+    .container{
+
+        // sarlavhani responsiveigi
+        .text-center{
+            .display-4{
+                font-size: 33px;
+            }
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            .col-6{
+                img{
+                    transform: scale(1.9);
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                }
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+
+
+    }
+
+     //Rasmlarning slayd qismining responsiveligi
+    section{
+        margin: 0;
+        height:230px;
+        // sarlavhani responsiveligi
+      .text-center{
+          .display-4{
+              font-size: 33px;
+          }
+      }
+      .carousel{
+          display: flex;
+             //slaydning responsive qismi
+          .carousel-inner{
+              .carousel-item{
+                  .card-deck{
+                    display: flex;
+                    .card{
+
+                       .card-img-overlay{
+                           p{
+                               font-size: 18px;
+                               transform: translateY(-1rem);
+                           }
+                           h4{
+                               font-size: 6px;
+                               transform: translateY(-2rem);
+
+                           }
+                       }
+                      }
+                  }
+              }
+          }
+      }
+    }
+
+    //proyectni cardlar qismi
+    .container{
+
+        #cardSarlavhasi{
+            h2{
+                font-size: 33px;
+            color:$button;
+            }
+            
+
+
+                
+        
+        }
+        // cardlarning responsiveligi
+        .card-deck{
+            margin-bottom: 1rem;
+           .card{
+            .card-img-overlay{
+                width:100%;
+
+                h5{
+                    font-size:14px;
+                    width:306px;
+                    
+                }
+            }
+           }
+        }
+    }
+
+    //proyectni huquqiy konsultatsiya qismining responsiveligi
+    header{
+        .container{
+            transform: translateY(0rem);
+            h3{
+                font-size:12px;
+            }
+            p{
+                font-size:10px;
+
+            }
+            .btn{
+                font-size: 8px;
+            }
+        }
+    }
+ 
+    //proyectning pastgi qismi ya`ni "footer"
+    .container{
+        .row{
+            display: flex;
+            justify-content: space-around;
+            .col-4{
+                width:100%;
+                margin-bottom: 1rem;
+                p{
+                width:250px;
+                font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+@media(min-width:475px) and (max-width:774.9px) {
+
+    // navbar bottom1 responsive
+   
+    .container{
+        .navbar{
+            transform: translateX(-1rem);
+            margin: 1rem auto;
+           .navbar-collapse{
+             .nav-item{
+              margin: 0;
+             }
+           }
+        }
+    }
+   
+
+    // kompaniya haqida ma`lumotlar yani  row va collar bilan ishlashning responsiveligi
+
+    .container{
+
+        // sarlavhani responsiveigi
+        .text-center{
+            .display-4{
+                font-size: 33px;
+            }
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            .col-6{
+                img{
+                    transform: scale(1.9);
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                }
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+
+
+    }
+
+     //Rasmlarning slayd qismining responsiveligi
+    section{
+        margin: 0;
+        height:230px;
+        // sarlavhani responsiveligi
+      .text-center{
+          .display-4{
+              font-size: 33px;
+          }
+      }
+      .carousel{
+          display: flex;
+             //slaydning responsive qismi
+          .carousel-inner{
+              .carousel-item{
+                  .card-deck{
+                    display: flex;
+                    .card{
+                      
+                       .card-img-overlay{
+                           p{
+                               font-size: 26px;
+                               transform: translateY(-1rem);
+                           }
+                           h4{
+                               font-size: 16px;
+                               transform: translateY(-2rem);
+
+                           }
+                       }
+                      }
+                  }
+              }
+          }
+      }
+    }
+
+    //proyectni cardlar qismi
+    .container{
+
+        #cardSarlavhasi{
+            h2{
+                font-size: 33px;
+            color:$button;
+            }
+            
+
+
+                
+        
+        }
+        // cardlarning responsiveligi
+        .card-deck{
+            margin-bottom: 1rem;
+            display: flex;
+            // flex-wrap: wrap;
+            .card{
+               width:50%;
+            .card-img-overlay{
+
+                h5{
+                    font-size:14px;
+                    width:100%;
+                    
+                }
+            }
+           }
+        }
+    }
+
+    //proyectni huquqiy konsultatsiya qismining responsiveligi
+    header{
+        .container{
+            transform: translateY(0rem);
+            h3{
+                font-size:16px;
+            }
+            p{
+                font-size:14px;
+
+            }
+            .btn{
+                font-size: 13px;
+            }
+        }
+    }
+ 
+    //proyectning pastgi qismi ya`ni "footer"
+    .container{
+        .row{
+            display: flex;
+            justify-content: space-between;
+            .col-4{
+                width:100%;
+                margin-bottom: 1rem;
+                p{
+                width:100%;
+                font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+@media(min-width:775px) and (max-width:979.9px) {
+
+    // navbar bottom1 responsive
+   
+    .container{
+        .navbar{
+            transform: translateX(-1rem);
+            margin: 3rem auto;
+           .navbar-collapse{
+             .nav-item{
+              margin: 0;
+             }
+           }
+        }
+    }
+   
+
+    // kompaniya haqida ma`lumotlar yani  row va collar bilan ishlashning responsiveligi
+
+    .container{
+
+        // sarlavhani responsiveigi
+        .text-center{
+            .display-4{
+                font-size: 33px;
+            }
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            .col-6{
+                img{
+                    transform: scale(1.9);
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                }
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+
+
+    }
+
+     //Rasmlarning slayd qismining responsiveligi
+    section{
+        margin: 0;
+        height:230px;
+        // sarlavhani responsiveligi
+      .text-center{
+          .display-4{
+              font-size: 33px;
+          }
+      }
+      .carousel{
+          display: flex;
+             //slaydning responsive qismi
+          .carousel-inner{
+              .carousel-item{
+                  .card-deck{
+                    display: flex;
+                    .card{
+                      
+                       .card-img-overlay{
+                           p{
+                               font-size: 26px;
+                               transform: translateY(-1rem);
+                           }
+                           h4{
+                               font-size: 16px;
+                               transform: translateY(-2rem);
+
+                           }
+                       }
+                      }
+                  }
+              }
+          }
+      }
+    }
+
+    //proyectni cardlar qismi
+    .container{
+
+        #cardSarlavhasi{
+            h2{
+                font-size: 33px;
+            color:$button;
+            }
+            
+
+
+                
+        
+        }
+        // cardlarning responsiveligi
+        .card-deck{
+            margin-bottom: 1rem;
+            display: flex;
+            // flex-wrap: wrap;
+            .card{
+               width:50%;
+            .card-img-overlay{
+
+                h5{
+                    font-size:14px;
+                    width:100%;
+                    
+                }
+            }
+           }
+        }
+    }
+
+    //proyectni huquqiy konsultatsiya qismining responsiveligi
+    header{
+        .container{
+            transform: translateY(0rem);
+            h3{
+                font-size:16px;
+            }
+            p{
+                font-size:14px;
+
+            }
+            .btn{
+                font-size: 13px;
+            }
+        }
+    }
+ 
+    //proyectning pastgi qismi ya`ni "footer"
+    .container{
+        .row{
+            display: flex;
+            justify-content: space-between;
+            .col-4{
+                width:100%;
+                margin-bottom: 1rem;
+                p{
+                width:100%;
+                font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
